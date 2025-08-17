@@ -110,6 +110,15 @@
 }
 @media (min-width:760px){
     .chat-container{
+     width:60%;
+     height:90%;
+    }
+    .robot-image{
+        right:-15vw;
+    }
+ }
+ @media (min-width:960px){
+    .chat-container{
      width:30%;
      height:90%;
     }

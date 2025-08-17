@@ -56,3 +56,11 @@
 .denuncia-imagen{
     width:80%;
 }
+@media (min-width:760){
+    .denuncia-section{
+        height:120vh;
+    }
+    .denuncia-content {
+  height:120vh;
+}
+}
