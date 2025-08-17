@@ -10,10 +10,10 @@ export default function Header() {
           Monitoreo
         </NavLink>
         <NavLink to="/chatbot" className={({ isActive }) => isActive ? 'active' : ''}>
-          Chatbot
+          Pide Ayuda
         </NavLink>
-        <NavLink to="/estudios" className={({ isActive }) => isActive ? 'active' : ''}>
-          Estudios
+        <NavLink to="/denuncia" className={({ isActive }) => isActive ? 'active' : ''}>
+          Denuncia
         </NavLink>
       </nav>
     </header>
