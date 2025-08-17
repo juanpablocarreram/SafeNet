@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Chatbot.css";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+import Robot from "../assets/robot.png"
 
 let aliveMessages = []
 const GEMINI_API_KEY = "AIzaSyBkGHdrlisAOMXj1vGK5rvPbKAAK8agd3A"; // Tu API Key
@@ -42,6 +43,7 @@ function Chatbot() {
   return (
     <div className="container">
       <div className="chat-container">
+       <img className="robot-image "src={Robot}/>
         <div className="chat">
           {messages.map((msg, idx) => (
             <div

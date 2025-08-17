@@ -1,5 +1,5 @@
 .container{
-    background-color:var(--secondary-color);
+    background-color:linear-gradient(to bottom, #7c7c7c, #444444);
     height:80vh;
     display:flex;
     align-items:center;
@@ -17,33 +17,7 @@
     justify-content:flex-end;
     gap:1vh;
     align-items:center;
-}
-.chat{
-    height:80%;
-    overflow-y:scroll;
-    width:100%;
-}
-.prompt-section{
- height:15%;
- background-color.container{
-    background-color:var(--secondary-color);
-    height:80vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-.chat-container{
-    background-color:var(--primary-color);
-    height:80%;
-    width:80%;
-    border-radius:3%;
-    box-shadow:0px 0px 3vh var(--primary-color);
-    padding:2vw;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-end;
-    gap:1vh;
-    align-items:center;
+    position:relative;
 }
 .chat{
     height:80%;
@@ -53,41 +27,6 @@
 .prompt-section{
  height:15%;
  background-color:rgba(0,0,0,.1);
- width:100%;
- display:flex;
- justify-content:space-evenly;
- align-items:center;
- border-radius:2vh;
-}
-.prompt-section > *{
-    height:70%;
-    border-radius:2vw;
-}
-.prompt{
-    height:70%;
-    color:var(--primary-color);
-    background-color:var(--secondary-color);
-    width:70%;
-    transition:all ease .4s;
-    padding:1vh;
-
-}
-.prompt:focus{
-    box-shadow:0px 0px 2vh var(--secondary-color);
-    outline:none;
-    transition:all ease .4s;
-}
-.submit-prompt{
-    width:20%;
-    background-color:rgb(72, 72, 206);
-    transition:all ease .4s;
-}
-.submit-prompt:hover{
-    width:20%;
-    background-color:blue;
-    transform:scale(105%);
-    transition:all ease .4s;
-}:rgba(0,0,0,.1);
  width:100%;
  display:flex;
  justify-content:space-evenly;
@@ -151,4 +90,30 @@
   color: #6366f1;
   font-style: italic;
   font-weight: 500;
-}c
+}
+.robot-image{
+    position:absolute;
+    height:20%;
+    right:-25%;
+}
+@media (min-width:550px){
+   .chat-container{
+    width:60%;
+    height:90%;
+   }
+    .container{
+        height:90vh;
+    }
+    .robot-image{
+        right:-10vw;
+    }
+}
+@media (min-width:760px){
+    .chat-container{
+     width:30%;
+     height:90%;
+    }
+    .robot-image{
+        right:-5vw;
+    }
+ }
